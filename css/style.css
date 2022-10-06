@@ -1,0 +1,41 @@
+body {
+  font-family: 'Merriweather', serif;
+  background-color: #F0F0F2;
+  color:#3E3E40;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Mulish', sans-serif;
+  font-size: 40pt;
+}
+
+header {
+  text-align: center;
+}
+
+header img{
+  width: 75px;
+}
+
+#hero, footer {
+  color: #0D0D0D;
+  border: 2px solid #3E3E40;
+  text-align: center;
+  background-color: #BDBDBF;
+  padding: 10px;
+}
+
+#hero img {
+  width: 300px;
+}
+
+#hobbies{
+  
+  text-align: center;
+}
+
+ul.mylist{
+  display: inline-block;
+  text-align: left;
+}
+
