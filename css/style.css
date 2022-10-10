@@ -62,3 +62,18 @@ ul ol li::before {
 ul ul ul li::before {
   content: '🤷‍♀️';
 }
+
+#gallery {
+  margin-top: 2.5em;
+  border: solid 3px #1b2451;
+}
+
+#gallery img {
+  max-width: 80%;
+  margin-top: 1.5em;
+  border-radius: 30px;
+}
+
+#gallery figure {
+  text-align: center;
+}
