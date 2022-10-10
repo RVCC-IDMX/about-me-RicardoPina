@@ -1,27 +1,34 @@
 body {
   font-family: 'Merriweather', serif;
-  background-color: #F0F0F2;
-  color:#3E3E40;
+  background-color: #f0f0f2;
+  color: #3e3e40;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Mulish', sans-serif;
   font-size: 40pt;
+  text-align: center;
 }
 
 header {
   text-align: center;
 }
 
-header img{
+header img {
   width: 75px;
 }
 
-#hero, footer {
-  color: #0D0D0D;
-  border: 2px solid #3E3E40;
+#hero,
+footer {
+  color: #0d0d0d;
+  border: 2px solid #3e3e40;
   text-align: center;
-  background-color: #BDBDBF;
+  background-color: #bdbdbf;
   padding: 10px;
 }
 
@@ -29,13 +36,29 @@ header img{
   width: 300px;
 }
 
-#hobbies{
-  
+#aspirations,
+#hobbies {
   text-align: center;
 }
 
-ul.mylist{
+ul.mylist {
   display: inline-block;
   text-align: left;
 }
 
+ul,
+ol {
+  list-style: none;
+}
+ul li::before {
+  content: '✅';
+  display: inline-block;
+  margin-right: 0.2rem;
+}
+
+ul ol li::before {
+  content: '📌';
+}
+ul ul ul li::before {
+  content: '🤷‍♀️';
+}
