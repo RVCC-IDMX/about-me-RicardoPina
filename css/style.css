@@ -13,7 +13,7 @@ h6 {
   font-family: 'Mulish', sans-serif;
   font-size: 40pt;
   text-align: center;
-  margin: 2rem;
+  margin: 0.1em;
 }
 
 header {
@@ -34,17 +34,15 @@ footer {
 }
 
 #hero img {
-  width: 300px;
+  width: 50%;
+  max-width: 600px;
 }
 
 #aspirations,
 #hobbies {
-  text-align: center;
-}
-
-ul.mylist {
-  display: inline-block;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 ul,
@@ -60,33 +58,32 @@ ul li::before {
 ul ol li::before {
   content: '📌';
 }
-ul ul ul li::before {
-  content: '🤷‍♀️';
-}
 
 #gallery {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  /* margin-top: 2.5rem;
+  margin-bottom: 2.5rem; */
   border: solid 3px #1b2451;
 }
 
 #gallery img {
-  max-width: 80%;
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
+  width: 80%;
   border-radius: 30px;
 }
 
 #gallery figure {
+  font-size: 1.5rem;
   text-align: center;
 }
 
 /* Literature */
 #lit {
+  font-size: x-large;
   border: solid 3px #1b2451;
   margin-bottom: 2.5rem;
 }
 #lit div {
-  padding: 0.5rem 5rem 1.5rem;
+  padding: 0.1rem 2rem 1.5rem;
   max-width: 35rem;
   margin: 0 auto;
 }
@@ -103,4 +100,38 @@ ul ul ul li::before {
   font-family: 'Mulish', sans-serif;
   box-shadow: 5px 5px 5px #adb5df68;
   border-radius: 25%;
+}
+
+@media screen and (min-width: 60rem) {
+  figure {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  #gallery img {
+    width: 100%;
+  }
+
+  figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: 1.5rem;
+  }
+
+  #lit div {
+    max-width: 100%;
+    columns: 15rem;
+  }
+
+  #hero img {
+    width: 550px;
+  }
+
+  #lit div {
+    padding: 0.5rem 5rem 1.5rem;
+    /* max-width: 35rem; */
+    margin: 0 auto;
+  }
 }
