@@ -218,6 +218,57 @@
         ></iframe>
       </div>
     </section>
+
+    <section id="contact">
+      <h2>Contact Us:</h2>
+      <form id="contactFrom" name="contactForm" data-netlify="true">
+        <fieldset>
+          <legend id="legend">Contact Form</legend>
+          <div id="formElements">
+            <!-- Name -->
+            <label for="name">Name (required)</label>
+            <input type="text" name="name" id="name" required />
+            <!-- Email -->
+            <label for="email">Email (required)</label>
+            <input type="email" name="email" id="email" required />
+            <!-- Phone -->
+            <label for="phone">Phone (Optional)</label>
+            <input type="tel" name="phone" id="phone" />
+
+            <!-- Phone Type -->
+            <label for="phonetype">Phone type (optional)</label>
+            <select name="phoneType" id="phonetype">
+              <option value="" selected>Select phone type</option>
+              <option value="Mobile">Mobile</option>
+              <option value="Home">Home</option>
+              <option value="Work">Work</option>
+            </select>
+
+            <!-- Message -->
+            <label for="message">Message (optional)</label>
+            <textarea id="message" name="message" cols="30" rows="8"></textarea>
+
+            <!-- Reply -->
+            <fieldset>
+              <legend id="reply">Would you like a reply?</legend>
+              <ul>
+                <li>
+                  <input type="radio" name="reply" id="message-yes" checked />
+                  <label for="message-yes">Yes, a message would be nice.</label>
+                </li>
+                <li>
+                  <input type="radio" name="reply" id="message-no" />
+                  <label for="message-no">No, thanks.</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <!-- Sumbit -->
+            <button type="submit">Send</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
     <footer>©2022 - Ricardo Pina</footer>
   </body>
 </html>

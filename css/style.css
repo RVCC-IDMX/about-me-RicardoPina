@@ -44,7 +44,7 @@ footer {
   flex-direction: column;
   align-items: center;
 }
-
+/* 
 ul,
 ol {
   list-style: none;
@@ -57,7 +57,7 @@ ul li::before {
 
 ul ol li::before {
   content: '📌';
-}
+} */
 
 #gallery {
   /* margin-top: 2.5rem;
@@ -177,4 +177,98 @@ h2 {
   figure {
     display: block;
   }
+}
+
+/* Contact Form */
+
+#formElements {
+  display: grid;
+}
+
+form {
+  box-sizing: border-box;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  border: 4px solid hsl(0, 0%, 90%);
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  /* gap: 2rem; */
+  margin-bottom: 2rem;
+}
+
+button,
+fieldset,
+input,
+legend,
+select,
+textarea {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea {
+  border: 2px solid #333;
+  background-color: white;
+  border-radius: 0.25rem;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+select,
+textarea {
+  font: 1rem 'Mulish';
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 0.55rem;
+}
+
+input[type='radio'] {
+  height: 1.5em;
+  width: 1.5em;
+  vertical-align: middle;
+}
+
+input[type='radio'] {
+  border-radius: 50%;
+}
+
+label {
+  font: bold 1.2rem sans-serif;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#legend {
+  text-align: center;
+  font: bold 1.2rem sans-serif;
+  margin-bottom: 0.9rem;
+}
+
+#reply {
+  font: bold 1.2rem sans-serif;
+  padding-top: 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button[type='submit'] {
+  font: 1.25rem sans-serif;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  padding: 0.75rem 1.25rem;
+  background-color: hsl(213, 73%, 50%);
+  color: white;
+}
+button[type='submit']:hover {
+  background-color: hsl(213, 73%, 40%);
 }
