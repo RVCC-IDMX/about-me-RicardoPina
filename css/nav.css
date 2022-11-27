@@ -1,14 +1,31 @@
 /* make scrolling smooth */
-
+html {
+  scroll-behavior: smooth;
+}
 /* 
  get rid of padding & sizing on body so
  header is at top
 */
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 /* add some padding back to rest of page */
+main {
+  padding: 2vw;
+}
 
 /* navbar */
-
+.navbar {
+  background-color: #333;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
 /* logo */
 
 /* navigation list */
