@@ -38,7 +38,7 @@ footer {
   max-width: 600px;
 }
 
-#aspirations,
+#bio,
 #hobbies {
   display: flex;
   flex-direction: column;
@@ -76,24 +76,24 @@ ul ol li::before {
   text-align: center;
 }
 
-/* Literature */
-#lit {
+/* Blog */
+#blog {
   font-size: 1em;
   border: solid 3px #1b2451;
   margin-bottom: 2.5rem;
 }
-#lit div {
+#blog div {
   padding: 0.1rem 2rem 1.5rem;
   max-width: 35rem;
   margin: 0 auto;
 }
 
-#lit h1,
+#blog h1,
 h2 {
   font-size: 30px;
 }
 
-#lit div p:nth-child(1):first-letter {
+#blog div p:nth-child(1):first-letter {
   color: rgb(255, 221, 0);
   background-image: radial-gradient(rgb(10, 94, 94), rgb(167, 222, 170));
   float: left;
@@ -145,7 +145,7 @@ h2 {
     margin-left: 1.5rem;
   }
 
-  #lit div {
+  #blog div {
     max-width: 100%;
     columns: 20rem;
   }
@@ -154,7 +154,7 @@ h2 {
     width: 550px;
   }
 
-  #lit div {
+  #blog div {
     padding: 0.5rem 5rem 1.5rem;
     /* max-width: 35rem; */
     margin: 0 auto;
