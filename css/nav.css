@@ -41,8 +41,23 @@ main {
 .logo h1 {
   font-size: 1.5em;
 }
-/* navigation list */
 
+/* navigation list */
+.navbar-links li {
+  list-style: none;
+  display: block;
+  padding: 0.5em 0;
+}
+
+.navbar-links a {
+  color: whitesmoke;
+  background-color: #333;
+  font-size: 1rem;
+  padding: 1rem 1.25rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  display: inline-block;
+}
 /*  
  style all a tags in header 
  and then on hover
