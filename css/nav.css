@@ -58,10 +58,18 @@ main {
   text-decoration: none;
   display: inline-block;
 }
+
 /*  
  style all a tags in header 
  and then on hover
 */
+
+.navbar-links a:hover,
+.navbar-links a:focus {
+  filter: invert(1);
+  border-radius: 10px;
+  outline: none;
+}
 
 /* 
 media query for non-mobile nav bar
