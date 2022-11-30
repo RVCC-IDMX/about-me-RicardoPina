@@ -1,17 +1,24 @@
 body {
-  font-family: 'Merriweather', serif;
+  font-family: 'Whitney', 'Roboto', sans-serif;
   background-color: #f0f0f2;
   color: #3e3e40;
+  font-size: 1.1rem;
 }
 
-h1,
+h1 {
+  font-family: 'Ginto Nord', 'Poppins', sans-serif;
+  font-size: 35pt;
+  text-align: center;
+  margin: 0.1em;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Mulish', sans-serif;
-  font-size: 40pt;
+  font-family: 'Ginto Normal', 'Poppins', sans-serif;
+  font-size: 32pt;
   text-align: center;
   margin: 0.1em;
 }
