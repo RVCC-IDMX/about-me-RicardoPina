@@ -22,11 +22,23 @@ A modern website must be accessible to all, which is why modern brutalism uses c
 | :--------------- | :------: |
 | Text Color       | #000000  |
 | Alternate Text   | #ffffff  |
-| Background Color | #C1ABE5  |
+| Background Color | #D1EAFF  |
 | Secondary Color  | #DD0662  |
-| Accent Color     | #B2C5F6  |
+| Accent Color     | #D2BCF7  |
 
 ## Citations
+
+The following resources were used in the creative process:
+
+- [A How-to Guide to SVG Animation](https://www.toptal.com/front-end/svg-animation-guide)
+
+- [SVG: Scalable Vector Graphics](https://developer.mozilla.org/en-US/docs/Web/SVG)
+
+- [IconScout](https://iconscout.com/unicons/explore/line?redirect=%2Funicons%2Fexplore%2Fline%3Fcolor%3D%252523DD0662%26name%3Dinstagram%26query%3Dinst)
+
+- [SVG Tutorial](https://www.w3schools.com/graphics/svg_intro.asp)
+
+- [Behance: design inspiration](https://www.behance.net/gallery/156967259/Fuwu-%28Neobrutalism-App%29?tracking_source=search_projects%7Cneobrutalism)
 
 ## License
 
