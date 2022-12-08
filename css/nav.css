@@ -18,78 +18,153 @@ main {
 }
 
 /* navbar */
-.navbar {
-  background-color: #333;
-  color: whitesmoke;
-  display: flex;
-  flex-direction: column;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
-/* logo */
+:root {
+  --bg-color: hsl(207, 100%, 91%);
+  --text-color: black;
+  --main-color: #dd0662;
+  --active-color: white;
+  --nav-color: rgb(180, 222, 255);
+}
+
+header img {
+  width: 40%;
+}
+body {
+  margin-top: 4em;
+  min-height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--nav-color);
+  padding: 5px 0px 14px 4%;
+  transition: all 0.5s ease;
+  /* border-radius: 0px 0px 15px 15px; */
+}
 
 .logo {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .logo img {
-  height: 5vw;
-  width: 5vw;
+  padding: 5px 0px 0px 0px;
 }
 
-.logo h1 {
-  font-size: 1.5em;
+.navbar {
+  display: flex;
 }
-
-/* navigation list */
-.navbar-links li {
-  list-style: none;
-  display: block;
-  padding: 0.5em 0;
-}
-/*  
- style all a tags in header 
- and then on hover
-*/
-
-.navbar-links a {
-  color: whitesmoke;
-  background-color: #333;
+.navbar a {
+  color: var(--active-color);
+  background-color: var(--main-color);
   font-size: 1rem;
-  padding: 1rem 1.25rem;
-  letter-spacing: 2px;
-  text-decoration: none;
-  display: inline-block;
+
+  margin: 0px 30px;
+  padding: 6px 17px;
+  border-radius: 25px;
+  /* border: 2px solid; */
+  /* padding: 10px; */
+  /* box-shadow: 5px 5px black; */
+  margin: 0px 20px;
+
+  transition: all 0.5s ease;
+}
+.navbar a:hover {
+  /* font-weight: 700; */
+  font-weight: 700;
+}
+.navbar a.active {
+  font-weight: 700;
+}
+.main {
+  display: flex;
+  align-items: center;
+}
+.main a {
+  margin-right: 25px;
+  margin-left: 10px;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
 }
 
-.navbar-links a:hover,
-.navbar-links a:focus {
-  filter: invert(1);
-  border-radius: 10px;
-  outline: none;
+.main a:hover {
+  color: var(--main-color);
+}
+#menu-icon {
+  font-size: 35px;
+  color: var(--text-color);
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
 }
 
-/* 
-media query for non-mobile nav bar
-min-width set to width of nav elements 
-such that no text wraps 
-*/
-@media screen and (min-width: 60rem) {
-  .navbar-links {
-    display: flex;
-    justify-content: space-between;
+@media (max-width: 1280px) {
+  header {
+    padding: 9px 0px 20px 4%;
+    transition: 0.2s;
   }
+  .navbar a {
+    padding: 10px 20px;
+    border-radius: 25px;
+    /* border: 2px solid; */
+    /* padding: 10px; */
+    /* box-shadow: 5px 5px black; */
+    margin: 0px 20px;
+  }
+}
 
+@media (max-width: 1090px) {
+  #menu-icon {
+    display: block;
+    padding: 15px;
+  }
   .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .navbar ul {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 270px;
+    background: var(--main-color);
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    box-shadow: none;
+    transition: all 0.5s ease;
+  }
+  .navbar a {
+    display: block;
+    box-shadow: none;
+    margin: 12px 0;
+    padding: 0px 25px;
+    transition: all 0.5s ease;
+  }
+  .navbar a:hover {
+    color: --active-color;
+    transform: translateY(5px);
+  }
+  .navbar a.active {
+    font-weight: 700;
+  }
+  .navbar.open {
+    right: 2%;
   }
 }
